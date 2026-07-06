@@ -264,10 +264,3 @@ Voltage-Bandgap-Reference/
    (Section 6) — none of which are copied from the references above and
    are specific to this simulated instance.
 
-## 10. Disclaimer
-
-Numeric readings in Sections 3, 5, and 6 (crossover temperatures,
-voltage values, TC) were taken by visual inspection of the exported
-waveform plots, not from a re-parsed raw dataset — treat them as
-engineering-accurate to the precision of a plot reading (±~10–20 mV,
-±~2–3 °C), not as PSF-exported measurement-grade figures.
