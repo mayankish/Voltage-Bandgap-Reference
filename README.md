@@ -1,7 +1,7 @@
 
 # Voltage Bandgap Reference (BGR) — 90 nm CMOS/BJT, −50 °C to 125 °C
 
-![Schematic](images/"voltage bandgap reference .png")
+![Schematic](images/schematic.png)
 
 A BJT-core, self-biased CMOS bandgap voltage reference designed and
 simulated in Cadence Virtuoso/Spectre on the GPDK090 (90 nm) process, with
