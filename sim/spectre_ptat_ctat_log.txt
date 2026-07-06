@@ -1,0 +1,213 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 12.1.0.347.isr3 32bit -- 10 Jan 2013
+Copyright (C) 1989-2012 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Protected by U.S. Patents: 
+        5,610,847; 5,790,436; 5,812,431; 5,859,785; 5,949,992; 5,987,238; 
+        6,088,523; 6,101,323; 6,151,698; 6,181,754; 6,260,176; 6,278,964; 
+        6,349,272; 6,374,390; 6,493,849; 6,504,885; 6,618,837; 6,636,839; 
+        6,778,025; 6,832,358; 6,851,097; 6,928,626; 7,024,652; 7,035,782; 
+        7,085,700; 7,143,021; 7,493,240; 7,571,401.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: buet   Host: cadence   HostID: 7F0100   PID: 8323
+Memory  available: 2.9295 GB  physical: 4.1158 GB
+CPU Type: 11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz
+          Processor PhysicalID CoreID Frequency
+              0         -        -     3110.4
+              1         -        -     3110.4
+              2         -        -     3110.4
+              3         -        -     3110.4
+
+
+Simulating `input.scs' on cadence at 9:41:38 PM, Mon Jul 6, 2026 (process id: 8323).
+Current working directory: /home/buet/simulation/bandgap-ref/spectre/schematic/netlist.
+Command line:
+    /home/buet/cadence/MMSIM121/tools.lnx86/spectre/bin/32bit/spectre  \
+        input.scs +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre13_3297_9 -format psfxl -raw ../psf  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 8323
+
+Loading /home/buet/cadence/MMSIM121/tools.lnx86/cmi/lib/5.0/libinfineon_sh.so ...
+Loading /home/buet/cadence/MMSIM121/tools.lnx86/cmi/lib/5.0/libphilips_o_sh.so ...
+Loading /home/buet/cadence/MMSIM121/tools.lnx86/cmi/lib/5.0/libphilips_sh.so ...
+Loading /home/buet/cadence/MMSIM121/tools.lnx86/cmi/lib/5.0/libsparam_sh.so ...
+Loading /home/buet/cadence/MMSIM121/tools.lnx86/cmi/lib/5.0/libstmodels_sh.so ...
+Reading file:  /home/buet/simulation/bandgap-ref/spectre/schematic/netlist/input.scs
+Reading file:  /home/buet/cadence/gpdk090_v4.6/models/spectre/gpdk090.scs
+Reading file:  /home/buet/cadence/gpdk090_v4.6/models/spectre/gpdk090_mos.scs
+Reading file:  /home/buet/cadence/gpdk090_v4.6/models/spectre/gpdk090_mos_iso.scs
+Reading file:  /home/buet/cadence/gpdk090_v4.6/models/spectre/gpdk090_resistor.scs
+Reading file:  /home/buet/cadence/gpdk090_v4.6/models/spectre/resd_va.va
+Reading link:  /home/buet/cadence/MMSIM121/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /home/buet/cadence/MMSIM121/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /home/buet/cadence/MMSIM121/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /home/buet/cadence/MMSIM121/tools.lnx86/spectre/etc/ahdl/constants.vams
+Reading file:  /home/buet/cadence/gpdk090_v4.6/models/spectre/rnoise_va.va
+Reading file:  /home/buet/cadence/gpdk090_v4.6/models/spectre/gpdk090_capacitor.scs
+Reading file:  /home/buet/cadence/gpdk090_v4.6/models/spectre/gpdk090_diode.scs
+Reading file:  /home/buet/cadence/gpdk090_v4.6/models/spectre/gpdk090_bipolar.scs
+
+Time for NDB Parsing: CPU = 229.964 ms, elapsed = 218.638 ms.
+Time accumulated: CPU = 229.964 ms, elapsed = 218.638 ms.
+Peak resident memory used = 32.3 Mbytes.
+
+
+Time for Elaboration: CPU = 11.998 ms, elapsed = 13.1419 ms.
+Time accumulated: CPU = 242.962 ms, elapsed = 231.926 ms.
+Peak resident memory used = 34.7 Mbytes.
+
+
+Time for EDB Visiting: CPU = 0 s, elapsed = 432.014 us.
+Time accumulated: CPU = 243.962 ms, elapsed = 232.518 ms.
+Peak resident memory used = 35.1 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2477): PM0: `Rds' = 390.195 nOhm is less than 0.001. Set to 0.
+
+
+Circuit inventory:
+              nodes 8
+                bjt 4     
+            bsim3v3 5     
+           resistor 2     
+            vsource 1     
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2477): PM0: `Rds' = 390.195 nOhm is less than 0.001. Set to 0.
+
+
+Time for parsing: CPU = 2 ms, elapsed = 3.73006 ms.
+Time accumulated: CPU = 245.962 ms, elapsed = 236.378 ms.
+Peak resident memory used = 35.9 Mbytes.
+
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre13_3297_9, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+Convergence achieved in 22 iterations.
+Total time required for dc analysis `dcOp': CPU = 1.999 ms, elapsed = 2.81 ms.
+Time accumulated: CPU = 249.961 ms, elapsed = 301.826 ms.
+Peak resident memory used = 36.7 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+Warning from spectre during DC analysis `dc'.
+    WARNING (CMI-2477): PM0: `Rds' = 390.195 nOhm is less than 0.001. Set to 0.
+    WARNING (CMI-2426): NM0: `Rds' = 0 Ohm is negative.
+
+
+*****************************************
+DC Analysis `dc': temp = (-50 C -> 125 C)
+*****************************************
+
+Warning from spectre during DC analysis `dc'.
+    WARNING (CMI-2477): PM0: `Rds' = 390.195 nOhm is less than 0.001. Set to 0.
+    WARNING (CMI-2426): NM0: `Rds' = 0 Ohm is negative.
+
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = -50 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Warning from spectre at temp = -50 C during DC analysis `dc'.
+    WARNING (CMI-2477): PM0: `Rds' = 390.195 nOhm is less than 0.001. Set to 0.
+    WARNING (CMI-2426): NM0: `Rds' = 0 Ohm is negative.
+
+Trying `homotopy = gmin'.
+
+Warning from spectre at temp = -46.5 C during DC analysis `dc'.
+    WARNING (CMI-2477): PM0: `Rds' = 390.195 nOhm is less than 0.001. Set to 0.
+    WARNING (CMI-2426): NM0: `Rds' = 0 Ohm is negative.
+    WARNING (CMI-2477): PM0: `Rds' = 390.195 nOhm is less than 0.001. Set to 0.
+        Further occurrences of this warning will be suppressed.
+    WARNING (CMI-2426): NM0: `Rds' = 0 Ohm is negative.
+        Further occurrences of this warning will be suppressed.
+
+    dc: temp = -43 C          (4 %), step = 3.5 C           (2 %)
+    dc: temp = -39.5 C        (6 %), step = 3.5 C           (2 %)
+    dc: temp = -36 C          (8 %), step = 3.5 C           (2 %)
+    dc: temp = -32.5 C       (10 %), step = 3.5 C           (2 %)
+    dc: temp = -29 C         (12 %), step = 3.5 C           (2 %)
+    dc: temp = -25.5 C       (14 %), step = 3.5 C           (2 %)
+    dc: temp = -22 C         (16 %), step = 3.5 C           (2 %)
+    dc: temp = -18.5 C       (18 %), step = 3.5 C           (2 %)
+    dc: temp = -15 C         (20 %), step = 3.5 C           (2 %)
+    dc: temp = -11.5 C       (22 %), step = 3.5 C           (2 %)
+    dc: temp = -8 C          (24 %), step = 3.5 C           (2 %)
+    dc: temp = -4.5 C        (26 %), step = 3.5 C           (2 %)
+    dc: temp = -1 C          (28 %), step = 3.5 C           (2 %)
+    dc: temp = 2.5 C         (30 %), step = 3.5 C           (2 %)
+    dc: temp = 6 C           (32 %), step = 3.5 C           (2 %)
+    dc: temp = 9.5 C         (34 %), step = 3.5 C           (2 %)
+    dc: temp = 13 C          (36 %), step = 3.5 C           (2 %)
+    dc: temp = 16.5 C        (38 %), step = 3.5 C           (2 %)
+    dc: temp = 20 C          (40 %), step = 3.5 C           (2 %)
+    dc: temp = 23.5 C        (42 %), step = 3.5 C           (2 %)
+    dc: temp = 27 C          (44 %), step = 3.5 C           (2 %)
+    dc: temp = 30.5 C        (46 %), step = 3.5 C           (2 %)
+    dc: temp = 34 C          (48 %), step = 3.5 C           (2 %)
+    dc: temp = 37.5 C        (50 %), step = 3.5 C           (2 %)
+    dc: temp = 41 C          (52 %), step = 3.5 C           (2 %)
+    dc: temp = 44.5 C        (54 %), step = 3.5 C           (2 %)
+    dc: temp = 48 C          (56 %), step = 3.5 C           (2 %)
+    dc: temp = 51.5 C        (58 %), step = 3.5 C           (2 %)
+    dc: temp = 55 C          (60 %), step = 3.5 C           (2 %)
+    dc: temp = 58.5 C        (62 %), step = 3.5 C           (2 %)
+    dc: temp = 62 C          (64 %), step = 3.5 C           (2 %)
+    dc: temp = 65.5 C        (66 %), step = 3.5 C           (2 %)
+    dc: temp = 69 C          (68 %), step = 3.5 C           (2 %)
+    dc: temp = 72.5 C        (70 %), step = 3.5 C           (2 %)
+    dc: temp = 76 C          (72 %), step = 3.5 C           (2 %)
+    dc: temp = 79.5 C        (74 %), step = 3.5 C           (2 %)
+    dc: temp = 83 C          (76 %), step = 3.5 C           (2 %)
+    dc: temp = 86.5 C        (78 %), step = 3.5 C           (2 %)
+    dc: temp = 90 C          (80 %), step = 3.5 C           (2 %)
+    dc: temp = 93.5 C        (82 %), step = 3.5 C           (2 %)
+    dc: temp = 97 C          (84 %), step = 3.5 C           (2 %)
+    dc: temp = 100.5 C       (86 %), step = 3.5 C           (2 %)
+    dc: temp = 104 C         (88 %), step = 3.5 C           (2 %)
+    dc: temp = 107.5 C       (90 %), step = 3.5 C           (2 %)
+    dc: temp = 111 C         (92 %), step = 3.5 C           (2 %)
+    dc: temp = 114.5 C       (94 %), step = 3.5 C           (2 %)
+    dc: temp = 118 C         (96 %), step = 3.5 C           (2 %)
+    dc: temp = 121.5 C       (98 %), step = 3.5 C           (2 %)
+    dc: temp = 125 C        (100 %), step = 3.5 C           (2 %)
+Total time required for dc analysis `dc': CPU = 29.996 ms, elapsed = 33.4499 ms.
+Time accumulated: CPU = 287.955 ms, elapsed = 343.683 ms.
+Peak resident memory used = 37.2 Mbytes.
+
+
+Notice from spectre.
+    139 warnings suppressed.
+Warning from spectre.
+    WARNING (CMI-2477): PM0: `Rds' = 390.195 nOhm is less than 0.001. Set to 0.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
