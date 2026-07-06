@@ -1,7 +1,7 @@
 
 # Voltage Bandgap Reference (BGR) — 90 nm CMOS/BJT, −50 °C to 125 °C
 
-![Schematic](images/schematic_2V.png)
+![Schematic](images/"voltage bandgap reference .png")
 
 A BJT-core, self-biased CMOS bandgap voltage reference designed and
 simulated in Cadence Virtuoso/Spectre on the GPDK090 (90 nm) process, with
@@ -144,7 +144,7 @@ Full, unedited logs: `sim/spectre_dc_sweep_log.txt`,
 
 ### 5.1 BGR, PTAT, CTAT vs. temperature (final result)
 
-![DC sweep — BGR, PTAT, CTAT](images/dc_sweep_ptat_ctat_bgr.png)
+![DC sweep — BGR, PTAT, CTAT](images/complete.png)
 
 | Signal | @ −50 °C | @ 27 °C | @ 125 °C | Behavior |
 |---|---|---|---|---|
@@ -167,7 +167,7 @@ temperature term.
 
 ### 5.2 CTAT branch alone
 
-![CTAT vs temperature](images/ctat_vs_temp.png)
+![CTAT vs temperature](images/ctat.png)
 
 `CTAT` (`V_BE` of the reference device) falls from ≈720 mV at −50 °C to
 ≈460 mV at 125 °C, an average slope of ≈ −1.5 mV/°C — consistent with
@@ -178,7 +178,7 @@ current at the sweep extremes.
 
 ### 5.3 PTAT/CTAT overlay
 
-![PTAT/CTAT overlay](images/ptat_ctat_overlay_final.png)
+![PTAT/CTAT overlay](images/ptat_an_ctat.png)
 
 `PTAT` rises from ≈50 mV (−50 °C) to ≈620 mV (125 °C) and crosses `CTAT`
 at roughly **88–90 °C, ≈520 mV** — i.e. the two terms are balanced near
